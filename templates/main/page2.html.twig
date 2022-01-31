@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block milieu %}
+    {{ form_start(monFormulaire) }}
+    {{ form_widget(monFormulaire) }}
+    <button> Envoyer</button>
+    {{ form_end(monFormulaire) }}
+{% endblock %}
+
+{% block title %}
+    {{ parent() }} | Page 2
+{% endblock %}
+

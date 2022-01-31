@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} | Formulaire
+{% endblock %}
+
+{% block milieu %}
+{{ form_start(formWishes) }}
+    {{ form_row(formWishes.title) }}
+    {{ form_row(formWishes.description) }}
+    {{ form_row(formWishes.author) }}
+    {{ form_row(formWishes.categorie) }}
+    <button>Envoyer</button>
+    {{ form_end(formWishes)}}
+
+
+{% endblock %}
+

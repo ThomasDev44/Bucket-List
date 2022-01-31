@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+
+{% block milieu %}
+    <ol>
+
+        <li>
+            Titre &nbsp; :&nbsp;  {{ theWish.title }}
+        </li>
+        <li>
+           Description &nbsp; :&nbsp;  {{ theWish.description }}
+        </li>
+        <li>
+           Auteur &nbsp; :&nbsp;  {{ theWish.author }}
+        </li>
+        <li>
+           Date &nbsp;:&nbsp;  {{ theWish.dateCreated.format('d/m/Y') }}
+        </li>
+        <li>
+           Categorie &nbsp; :&nbsp;  {{ theWish.categorie.nom }}
+        </li>
+
+    </ol>
+
+{% endblock %}
+
+{% block title %}
+    {{ parent() }} | Detail
+{% endblock %}
+
+
+

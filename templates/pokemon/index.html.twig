@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PokemonController!{% endblock %}
+
+{% block milieu %}
+
+<div>
+    <ul>
+        {% for pokemon in pokemons %}
+            <li> {{ pokemon.nom }}</li>
+            <li> {{ pokemon.dresseur.nom }} {{ pokemon.dresseur.prenom  }}</li>
+            {% for type in pokemon.types %}
+               <p>{{ type.nom }}</p>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+html, body {
+    height:100%;
+}
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background: url("../image/blob-scene-haikei.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1
+{
+    font-size: 100px;
+    text-align: center;
+    top: 0;
+    color: white;
+}
+
+.footer
+{
+    margin-left: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.topnav {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin-right: 50px;
+    max-width:fit-content;
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #232745;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.milieu {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+}
+
+ul {
+    counter-reset: index;
+    padding: 0;
+    max-width: 300px;
+}
+
+/* List element */
+li {
+    counter-increment: index;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/* Element counter */
+li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+a { text-decoration: none;
+    color: white;
+}
+
+*{
+    color: white;
+}
+button{
+    color: black;
+}
+input {
+    color: black;
+}
+option{
+    color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
